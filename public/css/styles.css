@@ -1,0 +1,245 @@
+body {
+    background-repeat: no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+
+}
+
+.pattern {
+    background: url(../images/overlay-pattern.png);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+ul.countdown {
+    list-style: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #f5f5f5;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+ul.countdown li {
+    display: inline-block;
+    border-left: 1px solid #fff;
+    width: 200px;
+}
+
+ul.countdown li:first-child {
+    border-left: none;
+}
+
+ul.countdown li span {
+    font-size: 50px;
+    font-weight: 300;
+    line-height:50px;
+}
+
+ul.countdown li span.seconds {
+
+    margin: 20px auto;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 80px;
+    color: #62cdf2;
+}
+
+ul.countdown li p {
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+#user-form{
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.user-detail{
+    border: none;
+    border-bottom: 1px solid #62cdf2;
+    background: transparent;
+    color: #b3b7b6;
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition: all 0.5s;
+}
+
+.user-detail:focus{
+    outline: none;
+    border-bottom: 1px solid #E0FFFF;
+}
+
+.user-detail:first-child{
+    margin: 0 25px 0 25px;
+}
+
+input::placeholder{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.successmessage{
+    width: 30%;
+    margin: 25px auto;
+    text-align:center;
+    border:none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    opacity: 0.7;
+}
+
+.warning-message{
+    width: 30%;
+    margin: 25px auto;
+    text-align:center;
+    opacity: 0.8;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.btn{
+    border: 1px solid #62cdf2;
+    background: rgba(255, 255, 255, 0.1);
+    color: #62cdf2;
+
+}
+
+.subs-btn{
+    width:160px;
+    height: 45px;
+    border-radius:0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    transition: all 0.5s;
+    margin: -15px 0 0 25px;
+
+
+}
+
+.subs-btn:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.homemessage{
+    margin: 125px 0 20px 0;
+    display: block;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 80px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.brandmessage{
+    margin: 0 0 50px 0;
+    display: block;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.social-heading {
+    position: absolute;
+    top: 16.5px;
+    right: 40px;
+    color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: 1px;
+
+}
+.social {
+    list-style: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #f5f5f5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.social li {
+    vertical-align: baseline;
+}
+
+.social li a{
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.social li a.fb:hover {
+    color: #507cbe;
+}
+
+.social li a.tw:hover {
+    color: #62cdf2;
+}
+
+.social li a.google:hover {
+    color: #ec5d48;
+}
+
+.social li a.insta:hover {
+    color: #cd486b;
+}
+
+.copyrights {
+    width: 100%;
+    color: white;
+    background: rgba(0,0,0, 0.5);
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 12px;
+
+}
+
+@media (max-width: 847px) {
+    ul.countdown li {
+        border-left: none;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .user-detail{
+        display: block;
+        margin: 0 auto 20px auto !important;
+        width: 60%;
+    }
+
+    .subs-btn {
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
+@media (max-width: 768px) {
+    .successmessage {
+        width: 60%;
+    }
+}
+
+@media (max-width: 425px) {
+    .homemessage {
+        font-size: 40px;
+    }
+
+    .warning-message {
+        width: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+    .social li a{
+        font-size: 20px;
+    }
+}
